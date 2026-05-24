@@ -4,7 +4,7 @@ This repository is the official PyTorch implementation of the [[paper](xxx)]. Ou
 
 ![image-20260124140256689](./readme.assets/image-20260124140256689.png)RDSNet can achieve **state-of-the-art** performance on four mainstream top-view fisheye datasets(LOAF, MW-R, HABBOF and CEPDOF) with **~50% parameters** and **~2.5× faster inference**, while yielding significant metric improvements.
 
-![image-20260327131753088](README.assets/image-20260327131753088.png)
+![image-20260327131753088](./readme.assets/image-20260327131753088.png)
 
 ## 🔥 News
 
@@ -195,7 +195,7 @@ python run_all.py --config custom_folder/val_yaml/val_RDSNet_CA_HM_C_1024.yaml #
 
 
 
-![image-20260327131753088](./README.assets/image-20260327131753088.png)
+![image-20260327131753088](./readme.assets/image-20260327131753088.png)
 
 
 
