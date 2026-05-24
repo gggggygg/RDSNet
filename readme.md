@@ -1,6 +1,6 @@
 # RDSNet: Efficient Radial-Awere Deformable Sampling Network For Top-View Fisheye People Detection
 
-This repository is the official PyTorch implementation of the [[paper](https://ieeexplore.ieee.org/abstract/document/11462726)]. Our code can reproduce testing results reported in the paper.
+This repository is the official PyTorch implementation of the [[paper](https://ieeexplore.ieee.org/abstract/document/11462726)](ICASSP 2026). Our code can reproduce testing results reported in the paper.
 
 ![image-20260124140256689](./readme.assets/image-20260124140256689.png)RDSNet can achieve **state-of-the-art** performance on four mainstream top-view fisheye datasets(LOAF, MW-R, HABBOF and CEPDOF) with **~50% parameters** and **~2.5× faster inference**, while yielding significant metric improvements.
 
