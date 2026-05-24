@@ -1,0 +1,60 @@
+1. Images information.
+{
+ 'height': 1024,
+ 'width': 1024,
+ 'id': 800,
+ 'file_name': '0052_04605.jpg',
+ 'camera_height': 250
+}
+'height' int: image height.
+'width' int: image width.
+'id' int: id of this image.
+'file_name' int: file name of this image.
+'camera_height': camera height of this image captured, units are cm.
+
+
+2. Annotations information.
+{
+ 'image_id': 800,
+ 'id': 8303,
+ 'category_id': 1,
+ 'camera_height': 250
+ 'segmentation': [[98.8052647266115, 276.9504466976952, 105.1094292777563, 266.1987688749596,
+                   117.65480430483713, 274.6149142993485, 112.27589154752128, 283.7885861688049]],
+ 'ritbox': [108.46134746418157, 275.38817901020207, 15.079170731738575,
+            12.46358963909735, 10.634329222817508, 149.61509626625406],
+ 'rotated_box': [108.46134746418157, 275.38817901020207, 11.548959430957428, 15.079170731738575, 59.615096266254056],
+ 'bbox': [99.03657767506874, 266.59327036327943, 18.84953957822564, 17.589817293845257],
+ 'world_location': [1320.7636234941929, 149.61509626625406],
+ 'person_location':[460.2516051481593, 149.61509626625406, 11.548959430957428, 15.079170731738575, 1320.7636234941929],
+ 'area': 337.52043536695527,
+ 'difficult': 0,
+ 'ignore': 0,
+ 'iscrowd': 0,
+}
+'image_id' int: id of image containing this instance.
+'id' int: id of this instance.
+'category_id': category id of this instance (always equal to 1).
+'camera_height': camera height of this instance captured, units are cm.
+'segmentation' [[x0, y0, ..., x7, y7]]: a tuple containing [(x0, y0, ..., x7, y7)], representing 4 points of the
+                                        original annotated ploygon, a.k.a, the ritbox.
+'ritbox' [xc, yc, h, wt, wb, rit_alpha]: a tuple containing (xc, yc, h, wt, wb, rit_alpha),
+                                         representing a rotating isosceles trapezoid (rit),
+                                         where xc and xy are the center coordinates of the rit.
+                                         h is the height of the rit, wt / wb is the width of top / bottom
+                                         side of the rit. rit_alpha represents how many degrees the box is
+                                         rotated CCW with regard to the positive x-axis (ranges 0-360 degree).
+'rotated_box' [xc, yc, w, h, rot_alpha]: a tuple containing (xc, yc, w, h, rot_alpha),
+                                         where xc and yc are the center coordinates of the rotated box.
+                                         w and h are the width and height of the rotated box. rot_alpha represents how
+                                         many degrees the box is rotated CCW with regard to the positive y-axis.
+'bbox' [x0, y0, w', h']: a tuple containing (x0, y0, w', h'), representing a circumscribed rectangle of rotated_box,
+                         where x0 and y0 are the coordinates of the image's top left corner.
+                         w' and h' are the width and height of the box.
+'world_location' [R, rit_alpha]: the position of foot point (midpoint of wb) in the camera coordinate system
+                                 adopts polar coordinates, units of R are cm.
+'person_location' [r, rit_alpha, w, h, R]: representing the full information of rotated_box and world_location.
+'area' float: area of rotated_box (also equals to area of ritbox).
+'difficult' int: 1 representing large distance instance (R > 2000)
+'ignore' int: 1 representing glass reflection instance
+'iscrowd' int: 1 representing crowd persons (always equal to 0).

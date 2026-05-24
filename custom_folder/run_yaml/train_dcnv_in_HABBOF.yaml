@@ -1,0 +1,8 @@
+output_path: /ric_nas/Overhead_fisheye/habbof_dataset
+epochs: 50
+batch: 16
+mode: train
+model_yaml: yolov8l-obb-dcnv3.yaml
+device: '0'
+save_period: 10
+data_yaml: train_split_secne.yaml

@@ -1,0 +1,6 @@
+dataset: 'LOAF'
+mode: 'val'
+model_cfg: 'weights/rapid_pretrain/rapid.ckpt'
+device: '7'
+val_size: 608
+checkpoint: 'weights/fine_tune_rapid_in_LOAF/rapid_pL1_dark53_LOAF608_Apr17_28000.ckpt' #'weights/rapid_pretrain/pL1_MWHB1024_Mar11_4000.ckpt'

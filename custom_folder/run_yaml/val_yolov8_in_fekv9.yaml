@@ -1,0 +1,12 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/Fisheye8K_all_including_train_and_test
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/detect/habbof_obb50/weights/best.pt
+data_yaml: fisheye8k.yaml
+device: '6'
+val_split: [val]
+imgsz: 640
+#fisheye8k_eval: True
+#split_metrics: True
+#val_plot_mod: 100
+#val_conf: 0.3

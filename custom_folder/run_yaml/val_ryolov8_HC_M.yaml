@@ -1,0 +1,15 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/MW-R_YOLO
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb724/weights/epoch200.pt
+#data_yaml: test_all.yaml
+device: '4'
+val_split: [val]
+imgsz: 608
+split_metrics: True
+#val_plot_low: True
+
+#angle_offset: True  #开这个记得使用rOBB
+#angle_offset_loss: True
+#val_plot_mod: 100
+#val_conf: 0.3

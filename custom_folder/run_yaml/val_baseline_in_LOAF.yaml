@@ -1,0 +1,7 @@
+output_path: Overhead_fisheye/LOAF_YOLO_xyxy_from_rbox
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb86/weights/best.pt
+device: '4'
+val_split: [val]
+imgsz: 1024

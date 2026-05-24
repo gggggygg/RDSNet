@@ -1,0 +1,25 @@
+output_path: Overhead_fisheye/LOAF_YOLO_xyxy_from_rbox  #LOAF_tiny4test  LOAF_YOLO_xyxy_from_rbox
+epochs: 100
+batch: 8
+mode: train
+model_yaml: runs/obb/habbof_obb99/weights/last.pt  #runs/obb/habbof_obb292/weights/last.pt  yolov8x-rconv1-obb.yaml
+device: '6'
+imgsz: 1024
+#val_imgsz: 1024
+#save_period: 20
+
+augment_dict:
+  degrees: 90
+  translate: 0
+  mosaic: 0
+#  scale: 0.25
+#  mosaic: 0
+#  scale: 0.3
+#optimizer_dict:
+#  optimizer: 'SGD'
+#  lr0: 0.0001
+#  momentum: 0.9
+#  weight_decay: 0.0001
+
+resume: True
+#fine_tune_pretrain: True

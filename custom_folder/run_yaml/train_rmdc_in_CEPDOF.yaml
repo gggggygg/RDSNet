@@ -1,0 +1,9 @@
+output_path: /ric_nas/Overhead_fisheye/CEPDOF_YOLO
+epochs: 50
+batch: 16
+mode: train
+model_yaml: yolov8l-obb-rmdc.yaml
+device: '5'
+save_period: 10
+data_yaml: train_split_secne.yaml
+

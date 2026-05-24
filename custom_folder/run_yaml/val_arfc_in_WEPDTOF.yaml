@@ -1,0 +1,7 @@
+output_path: /ric_nas/Overhead_fisheye/WEPDTOF_YOLO
+batch: 4
+mode: validate
+model_path: runs/obb/habbof_obb119/weights/best.pt
+device: '5'
+val_split: [all]
+imgsz: 1024

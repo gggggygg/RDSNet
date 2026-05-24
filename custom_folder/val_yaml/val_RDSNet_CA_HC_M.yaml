@@ -1,0 +1,8 @@
+dataset_path: datasets/MW-R_YOLO
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb552/weights/best.pt #path to your downloaded pretrained model
+Conv_Sparse_sampling: True
+device: '0'
+val_split: [val]
+imgsz: 608

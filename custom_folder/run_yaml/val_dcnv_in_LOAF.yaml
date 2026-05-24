@@ -1,0 +1,10 @@
+#CUSTOM_PLOT_NUMS: 5000
+output_path: /ric_nas/Overhead_fisheye/LOAF_YOLO
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb121/weights/best.pt
+device: '7'
+val_split: [val_seen]
+imgsz: 1024
+val_plot_cnt: 0
+#val_conf: 0.000001

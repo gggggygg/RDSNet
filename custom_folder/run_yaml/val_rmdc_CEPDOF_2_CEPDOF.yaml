@@ -1,0 +1,6 @@
+#CUSTOM_PLOT_NUMS: 6000
+output_path: /ric_nas/Overhead_fisheye/CEPDOF_YOLO
+batch: 4
+mode: validate
+model_path: runs/obb/habbof_obb158/weights/best.pt
+device: '0'

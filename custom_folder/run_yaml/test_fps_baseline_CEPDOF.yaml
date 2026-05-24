@@ -1,0 +1,6 @@
+PLOT_BATCHES: 3
+output_path: /ric_nas/Overhead_fisheye/CEPDOF_YOLO/images/val
+batch: 1
+mode: test_fps
+model_path: runs/obb/habbof_obb76/weights/best.pt
+device: '0'

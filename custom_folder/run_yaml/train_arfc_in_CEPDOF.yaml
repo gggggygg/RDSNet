@@ -1,0 +1,9 @@
+output_path: /ric_nas/Overhead_fisheye/CEPDOF_YOLO
+epochs: 50
+batch: 16
+mode: train
+model_yaml: yolov8l-custom-obb.yaml  #runs/obb/habbof_obb100/weights/last.pt
+device: '4'
+save_period: 10
+data_yaml: train_split_secne.yaml
+##################modified val_interval in original code########

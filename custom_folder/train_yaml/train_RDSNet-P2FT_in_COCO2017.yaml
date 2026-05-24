@@ -1,0 +1,26 @@
+dataset_path: datasets/COCO2017_YOLO #
+epochs: 250
+batch: 16
+mode: train
+model_yaml: yolov8m-RDSC-obb.yaml #
+device: '0'
+imgsz: 336
+save_period: 100
+data_yaml: COCO_tiny_HCM.yaml #
+coco: True
+
+mosaic_fish: True
+radial_distortion: True
+
+keep_label: True
+custom_trainer: True
+custom_scale: 0.55
+
+area_thr: 0.4
+
+val_imgsz: 1024
+rapid_transforms: True
+coco_pretrain_augment: True
+augment_dict:
+  degrees: 180
+  translate: 0

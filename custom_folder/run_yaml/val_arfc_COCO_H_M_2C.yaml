@@ -1,0 +1,9 @@
+#CUSTOM_PLOT_NUMS: 6000
+output_path: /ric_nas/Overhead_fisheye/CEPDOF_YOLO
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb243/weights/best.pt
+device: '2'
+imgsz: 1024
+val_split: [Lunch1]
+custom_LOAFeval_from_cocoeval: True

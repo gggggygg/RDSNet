@@ -1,0 +1,50 @@
+output_path: Overhead_fisheye/fisheye8k_obb  #LOAF_tiny4test  LOAF_YOLO_xyxy_from_rbox
+epochs: 500
+batch: 16
+mode: train
+model_yaml: runs/detect/habbof_obb3/weights/last.pt #yolov8m-RDSC.yaml #runs/obb/habbof_obb802/weights/epoch200.pt #yolov8m-rconv-test-obb.yaml  #runs/obb/habbof_obb196/weights/last.pt  yolov8n-rconv-obb.yaml
+device: '4'
+imgsz: 640
+#cut_scale_up: True
+save_period: 100
+data_yaml: fisheye8k.yaml #COCO.yaml #COCO_tiny_HCM.yaml
+#Conv_Sparse_sampling_traing: True
+
+#coco: True
+val_imgsz: 640
+
+#keep_label: True
+#keep_label_loaf: True
+#custom_trainer: True
+#custom_scale: 0.55
+
+#rapid_transforms: True
+#close_degrees: True
+
+loaf_transforms_ori: True
+
+#augment_dict:
+#  degrees: 180
+#  translate: 0
+#  mosaic: 0
+#  scale: 0.25
+#  mosaic: 0
+#  scale: 0.3
+
+#fkv9
+augment_dict:
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.9
+  mixup: 0.15  # image mixup (probability)
+  copy_paste: 0.3  # segment copy-paste (probability)
+  mosaic: 0
+
+#optimizer_dict:
+#  optimizer: 'SGD'
+#  lr0: 0.003
+#  momentum: 0.9
+#  weight_decay: 0.0001
+
+resume: True
+#fine_tune_pretrain: True

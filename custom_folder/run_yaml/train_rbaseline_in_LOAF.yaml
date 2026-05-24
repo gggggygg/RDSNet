@@ -1,0 +1,14 @@
+dataset_path: datasets/LOAF_YOLO_xyxy_from_rbox  #path/to/LOAF
+epochs: 100
+batch: 1
+mode: train
+model_yaml: yolov8m-rconv-test-obb.yaml
+device: '0'
+imgsz: 1024
+cut_scale_up: True
+val_imgsz: 1024
+
+augment_dict:
+  degrees: 180
+  translate: 0
+  mosaic: 0

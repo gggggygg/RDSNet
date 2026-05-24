@@ -1,0 +1,48 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/CEPDOF_YOLO #/home/weiph/code/ultralytics/Overhead_fisheye/COCO2017_YOLO_Rapid   #COCO2017_YOLO  #LOAF_tiny4test  LOAF_YOLO_xyxy_from_rbox_not_none
+epochs: 15
+batch: 32
+mode: train
+model_yaml: runs/obb/habbof_obb659/weights/epoch200.pt #runs/obb/habbof_obb406/weights/last.pt  #yolov8m-rconv-obb.yaml #runs/obb/habbof_obb339/weights/last.pt #  yolov8x-obb.yaml
+device: '5'
+imgsz: 672
+save_period: 100
+data_yaml: fine_tune_in_CM_H_split.yaml #COCO.yaml #COCO_tiny_HCM.yaml
+coco: True
+limit_whr: True
+
+#angle_offset: True  #开这个记得使用rOBB
+#angle_offset_loss: True
+
+split_metrics: True  #按场景求指标再取均值
+
+#keep_label: True
+#custom_trainer: True
+#custom_scale: 0.55
+
+
+#cut_scale_up: True
+area_thr: 0.4
+
+#angle_loss: True
+#penalty_mask: True
+#cls: 1
+
+val_imgsz: 608
+rapid_transforms: True
+#loaf_transforms: True
+augment_dict:
+  degrees: 180
+#  mosaic: 0
+#  scale: 0.55
+  translate: 0
+
+#val_plot_mod: 1
+
+optimizer_dict:
+  optimizer: 'SGD'
+  lr0: 0.0001
+  momentum: 0.9
+#  weight_decay: 0.0001
+
+#resume: True
+#fine_tune_pretrain: True

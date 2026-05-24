@@ -1,0 +1,6 @@
+dataset: 'tiny_one'
+mode: 'val'
+model_cfg: 'weights/rapid_pretrain/rapid.ckpt'
+device: '3'
+val_size: 1024
+checkpoint: 'weights/rapid_pretrain/rapid_pL1_dark53_COCO608_Jan07_20000.ckpt'

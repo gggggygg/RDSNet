@@ -1,0 +1,11 @@
+output_path: Overhead_fisheye/LOAF_YOLO_xyxy_from_rbox
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb546/weights/best.pt
+Conv_Sparse_sampling: True
+device: '4'
+val_split: [val, test]
+imgsz: 1024
+
+split_distance_metrics: True
+split_seen_un_seen: True

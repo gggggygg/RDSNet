@@ -1,0 +1,7 @@
+output_path: /ric_nas/Overhead_fisheye/LOAF_YOLO
+epochs: 50
+batch: 16
+mode: train
+model_yaml: yolo11l-obb.yaml  #runs/obb/habbof_obb100/weights/last.pt
+device: '3'
+imgsz: 608

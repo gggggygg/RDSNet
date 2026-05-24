@@ -1,0 +1,13 @@
+output_path: datasets/LOAF_YOLO_xyxy_from_rbox
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb519/weights/best.pt
+device: '0'
+val_split: [val, test]
+imgsz: 1024
+
+#split_distance_metrics: True
+#split_seen_un_seen: True
+#
+Conv_Sparse_sampling: True
+Conv_sampling_only_inner: True

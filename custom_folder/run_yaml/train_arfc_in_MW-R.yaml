@@ -1,0 +1,10 @@
+output_path: /ric_nas/Overhead_fisheye/MW-R_YOLO
+epochs: 1
+batch: 1
+mode: train
+model_yaml: yolov8l-custom-obb.yaml  #runs/obb/habbof_obb100/weights/last.pt
+device: '6'
+imgsz: 608
+#box: 7.5 # (float) box loss gain
+#cls: 3.0 # (float) cls loss gain
+#dfl: 1.5 # (float) dfl loss gain

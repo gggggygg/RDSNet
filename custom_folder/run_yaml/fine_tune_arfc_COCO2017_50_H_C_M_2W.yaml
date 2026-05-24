@@ -1,0 +1,11 @@
+output_path: /ric_nas/Overhead_fisheye/habbof_dataset
+epochs: 20
+batch: 16
+mode: train
+model_yaml: runs/obb/habbof_obb200/weights/last.pt  #runs/obb/habbof_obb100/weights/last.pt
+device: '6'
+imgsz: 608
+save_period: 10
+fine_tune: True
+data_yaml: fine_tune_in_H_C_M_2W.yaml
+cls: 1.5

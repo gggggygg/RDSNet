@@ -1,0 +1,16 @@
+output_path: /ric_nas/Overhead_fisheye/COCO2017_YOLO
+epochs: 80
+batch: 4
+mode: train
+model_yaml: yolov8x-obb.yaml  #runs/obb/habbof_obb100/weights/last.pt
+device: '2'
+imgsz: 608
+save_period: 20
+custom_augment: False
+optimizer_dict:
+  optimizer: 'SGD'
+  lr0: 0.001
+  momentum: 0.9
+  weight_decay: 0.64
+
+fine_tune_pretrain: True

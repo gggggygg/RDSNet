@@ -1,0 +1,7 @@
+output_path: /ric_nas/Overhead_fisheye/tiny_val_YOLO
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb125/weights/best.pt
+device: '2'
+val_split: [one]
+imgsz: 608

@@ -1,0 +1,7 @@
+output_path: /ric_nas/Overhead_fisheye/CEPDOF_YOLO
+epochs: 50
+batch: 16
+mode: train
+model_yaml: yolov8l-obb-gcnn.yaml
+device: '1'
+save_period: 10

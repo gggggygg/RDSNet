@@ -1,0 +1,9 @@
+#CUSTOM_PLOT_NUMS: 5000
+output_path: /ric_nas/Overhead_fisheye/LOAF_YOLO
+batch: 4
+mode: validate
+model_path: custom_folder/yolov8l-obb.pt
+device: '7'
+val_split: [val]
+imgsz: 1024
+#val_conf: 0.3

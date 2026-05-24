@@ -1,0 +1,11 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/CEPDOF_YOLO
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb659/weights/epoch200.pt
+data_yaml: test_all.yaml
+device: '4'
+val_split: [val]
+imgsz: 608
+split_metrics: True
+#val_plot_mod: 100
+#val_conf: 0.3

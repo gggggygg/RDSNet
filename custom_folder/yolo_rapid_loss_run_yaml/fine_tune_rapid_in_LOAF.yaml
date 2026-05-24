@@ -1,0 +1,10 @@
+dataset: 'LOAF'
+batch_size: 4
+mode: 'train'
+model_cfg: 'weights/rapid_pretrain/rapid.ckpt'
+device: '3'
+loaf_data: True
+checkpoint: 'weights/rapid_pretrain/pL1_MWHB1024_Mar11_4000.ckpt'
+eval_interval: 2000
+#img_interval: 2
+print_interval: 10

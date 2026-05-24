@@ -1,0 +1,4 @@
+dataset: 'COCO'
+batch_size: 16
+model_cfg: 'ultralytics/cfg/models/v8/yolov8l-rapid-arfc.yaml'
+device: '4'

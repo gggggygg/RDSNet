@@ -1,0 +1,9 @@
+output_path: /ric_nas/Overhead_fisheye/CEPDOF_YOLO
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb245/weights/best.pt
+device: '2'
+val_split: [val]
+imgsz: 608
+val_plot_cnt: 0
+#val_conf: 0.3

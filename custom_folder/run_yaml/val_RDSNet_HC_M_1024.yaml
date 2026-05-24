@@ -1,0 +1,10 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/MW-R_YOLO
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb556/weights/best.pt
+device: '4'
+val_split: [val]
+imgsz: 1024
+
+Conv_Sparse_sampling: True
+Conv_sampling_only_inner: True

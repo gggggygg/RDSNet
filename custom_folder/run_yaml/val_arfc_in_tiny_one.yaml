@@ -1,0 +1,9 @@
+#CUSTOM_PLOT_NUMS: 5000
+output_path: /ric_nas/Overhead_fisheye/tiny_val_YOLO
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb119/weights/best.pt
+device: '1'
+val_split: [one]
+imgsz: 1024
+#val_conf: 0.3

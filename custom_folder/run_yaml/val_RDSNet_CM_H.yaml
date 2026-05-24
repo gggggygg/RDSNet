@@ -1,0 +1,9 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/habbof_dataset
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb547/weights/best.pt
+data_yaml: test_all.yaml
+device: '4'
+val_split: [val]
+imgsz: 608
+split_metrics: True

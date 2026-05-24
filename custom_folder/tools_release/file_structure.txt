@@ -1,0 +1,49 @@
+LOAF
+|____images
+|    |____resolution_3k
+|    |    |____train
+|    |    |____val
+|    |    |____test
+|    |____resolution_1k
+|    |    |____train
+|    |    |____val
+|    |    |____test
+|    |____resolution_736
+|         |____train
+|         |____val
+|         |____test
+|
+|____annotations
+|    |____resolution_3k
+|    |    |____instances_train.json
+|    |    |____instances_val.json
+|    |    |____instances_val-seen.json
+|    |    |____instances_val-unseen.json
+|    |    |____instances_test.json
+|    |    |____instances_test-seen.json
+|    |    |____instances_test-unseen.json
+|    |____resolution_1k
+|    |    |____instances_train.json
+|    |    |____instances_val.json
+|    |    |____instances_val-seen.json
+|    |    |____instances_val-unseen.json
+|    |    |____instances_test.json
+|    |    |____instances_test-seen.json
+|    |    |____instances_test-unseen.json
+|    |____resolution_736
+|         |____instances_train.json
+|         |____instances_val.json
+|         |____instances_val-seen.json
+|         |____instances_val-unseen.json
+|         |____instances_test.json
+|         |____instances_test-seen.json
+|         |____instances_test-unseen.json
+|
+|____tools
+|
+|____files
+|    |____file_structure.txt
+|    |____scenes_id.txt
+|    |____statics_icd.txt
+|
+|____README.txt

@@ -1,0 +1,8 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/MW-R_YOLO
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb724/weights/epoch200.pt
+
+device: '4'
+val_split: [val]
+imgsz: 608

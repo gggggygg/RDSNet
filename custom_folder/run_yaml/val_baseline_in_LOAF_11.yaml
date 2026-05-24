@@ -1,0 +1,5 @@
+output_path: /ric_nas/Overhead_fisheye/LOAF_YOLO
+batch: 16
+mode: validate
+model_path: runs/obb/habbof_obb128/weights/best.pt
+device: '1'

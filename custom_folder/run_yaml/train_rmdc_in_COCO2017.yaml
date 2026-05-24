@@ -1,0 +1,8 @@
+output_path: /ric_nas/Overhead_fisheye/COCO2017_YOLO
+epochs: 50
+batch: 16
+mode: train
+model_yaml: yolov8l-obb-rmdc.yaml  #runs/obb/habbof_obb100/weights/last.pt
+device: '5'
+imgsz: 608
+save_period: 10

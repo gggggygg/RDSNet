@@ -1,0 +1,35 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/habbof_dataset  #LOAF_tiny4test  LOAF_YOLO_xyxy_from_rbox_not_none
+epochs: 50
+batch: 12
+mode: train
+model_yaml: runs/obb/habbof_obb305/weights/last.pt  #runs/obb/habbof_obb292/weights/last.pt  yolov8l-obb.yaml
+device: '3'
+imgsz: 1088
+rapid_train_strategy: True
+#save_period: 20
+data_yaml: fine_tune_in_HC_M.yaml
+rapid_dark53_bottleneck_kernel: True
+#coco: True
+limit_whr: True
+
+keep_label: True
+custom_trainer: True
+custom_scale: 0.25
+
+val_imgsz: 1024
+#rapid_transforms: True
+augment_dict:
+  degrees: 180
+#  mosaic: 0
+#  scale: 0.2
+  translate: 0
+#cls: 3
+
+#optimizer_dict:
+#  optimizer: 'SGD'
+#  lr0: 0.0001
+#  momentum: 0.9
+#  weight_decay: 0.0001
+
+#resume: True
+rapid_train_data: HCM

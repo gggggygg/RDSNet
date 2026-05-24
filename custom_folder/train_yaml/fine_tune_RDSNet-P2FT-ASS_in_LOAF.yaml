@@ -1,0 +1,25 @@
+dataset_path: datasets/LOAF_YOLO_xyxy_from_rbox  #
+epochs: 70
+batch: 8
+mode: train
+model_yaml: runs/obb/habbof_obb724/weights/epoch200.pt #path to your pretrained model
+device: '0'
+imgsz: 1024
+#cut_scale_up: True or False, i don't remember, try it
+Conv_Sparse_sampling_traing: True
+#Conv_sampling_only_inner: True
+val_imgsz: 1024
+area_thr: 0.4
+
+augment_dict:
+  degrees: 180
+  translate: 0
+  mosaic: 0
+  scale: 0.2
+optimizer_dict:
+  optimizer: 'SGD'
+  lr0: 0.001
+  momentum: 0.9
+
+#resume: True
+#fine_tune_pretrain: True

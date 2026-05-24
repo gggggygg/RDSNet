@@ -1,0 +1,6 @@
+dataset: 'LOAF'
+mode: 'val'
+model_cfg: 'ultralytics/cfg/models/v8/yolov8l-rapid-c2f-dcnv3.yaml'
+device: '3'
+val_size: 1024
+checkpoint: 'weights/fine_tune_c2f-dcnv3_in_LOAF/rapid_pL1_dark53_LOAF608_Apr16_8000.ckpt'

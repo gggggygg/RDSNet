@@ -1,0 +1,9 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/CEPDOF_YOLO
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb551/weights/best.pt
+data_yaml: test_all.yaml
+device: '3'
+val_split: [val]
+imgsz: 1024
+split_metrics: True

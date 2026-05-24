@@ -1,0 +1,10 @@
+output_path: Overhead_fisheye/CEPDOF_YOLO #tiny_val_YOLO #CEPDOF_YOLO
+batch: 1
+mode: validate  #vary_evaluate  #validate
+model_path: runs/obb/habbof_obb324/weights/last.pt
+device: '7'
+val_split: [val]
+imgsz: 608
+rapid_dark53_bottleneck_kernel: True
+#val_plot_mod: 400
+#val_conf: 0.3

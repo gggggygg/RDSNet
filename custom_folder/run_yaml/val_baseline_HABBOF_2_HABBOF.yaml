@@ -1,0 +1,5 @@
+output_path: /ric_nas/Overhead_fisheye/habbof_dataset
+batch: 1
+mode: validate
+model_path: runs/obb/habbof_obb161/weights/best.pt
+device: '6'

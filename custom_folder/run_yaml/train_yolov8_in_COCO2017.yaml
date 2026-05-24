@@ -1,0 +1,44 @@
+output_path: /home/weiph/code/ultralytics/Overhead_fisheye/COCO2017_YOLO_Rapid #/home/weiph/code/ultralytics/Overhead_fisheye/COCO2017_YOLO_Rapid   #COCO2017_YOLO  #LOAF_tiny4test  LOAF_YOLO_xyxy_from_rbox_not_none
+epochs: 250
+batch: 2
+mode: train
+model_yaml: yolov8m-obb.pt #runs/obb/habbof_obb498/weights/last.pt #yolov8m-obb.yaml #runs/obb/habbof_obb339/weights/last.pt #  yolov8x-obb.yaml
+device: '6'
+imgsz: 672
+save_period: 100
+data_yaml: COCO_tiny_HCM.yaml #COCO_tiny_HCM.yaml
+coco: True
+#limit_whr: True
+#mosaic_fish: True
+#radial_distortion: True
+
+keep_label: True
+custom_trainer: True
+custom_scale: 0.55
+
+area_thr: 0.4
+
+#angle_loss: True
+#penalty_mask: True
+#cls: 1
+
+val_imgsz: 608
+rapid_transforms: True
+coco_pretrain_augment: True
+#loaf_transforms: True
+augment_dict:
+  degrees: 180
+  mosaic: 0
+#  scale: 0
+  translate: 0
+
+#val_plot_mod: 1
+
+#optimizer_dict:
+#  optimizer: 'SGD'
+#  lr0: 0.0005
+#  momentum: 0.9
+#  weight_decay: 0.0001
+
+#resume: True
+#fine_tune_pretrain: True

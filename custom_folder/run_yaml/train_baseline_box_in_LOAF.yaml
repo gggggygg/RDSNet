@@ -1,0 +1,17 @@
+output_path: /ric_nas/Overhead_fisheye/LOAF_YOLO_BOX
+epochs: 50
+batch: 4
+mode: train
+model_yaml: yolov8x.yaml  #runs/obb/habbof_obb292/weights/last.pt  yolov8l-obb.yaml
+device: '4'
+imgsz: 1024
+custom_augment: False
+#fine_tune_pretrain: True
+#optimizer_dict:
+#  optimizer: 'SGD'
+#  lr0: 0.001
+#  momentum: 0.9
+#  weight_decay: 0.0001
+
+#resume: True
+#fine_tune_pretrain: True

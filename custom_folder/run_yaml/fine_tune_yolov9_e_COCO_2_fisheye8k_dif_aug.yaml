@@ -1,0 +1,72 @@
+output_path: Overhead_fisheye/fisheye8k_obb  #LOAF_tiny4test  LOAF_YOLO_xyxy_from_rbox
+epochs: 500
+batch: 12
+mode: train
+model_yaml: runs/detect/habbof_obb32/weights/last.pt #yolov9e.pt #yolov8m.pt #yolov8m-rconv-test-obb.yaml  #runs/obb/habbof_obb196/weights/last.pt  yolov8n-rconv-obb.yaml
+device: '4'
+imgsz: 640
+#cut_scale_up: True
+save_period: 100
+data_yaml: fisheye8k.yaml #COCO.yaml #COCO_tiny_HCM.yaml
+nw: 1
+#Conv_Sparse_sampling_traing: True
+
+#coco: True
+val_imgsz: 640
+
+#keep_label: True
+#keep_label_loaf: True
+#custom_trainer: True
+#custom_scale: 0.55
+
+#rapid_transforms: True
+#close_degrees: True
+#area_thr: 0.4
+
+#loaf_transforms_ori: True
+fekv9_transforms: True
+
+#augment_dict:
+#  degrees: 180
+#  translate: 0
+#  mosaic: 0
+#  scale: 0.25
+#  mosaic: 0
+#  scale: 0.3
+
+#
+#rapid_transforms: True
+augment_dict:
+  degrees: 0
+#  mosaic: 0
+  scale: 0.25
+  translate: 0
+  mixup: 0.15  # image mixup (probability)
+  copy_paste: 0.3  # segment copy-paste (probability)
+  flipud: 0.0  # image flip up-down (probability)
+  fliplr: 0.5  # image flip left-right (probability)
+
+#augment_dict:
+##  fl_gamma: 0.0  # focal loss gamma (efficientDet default gamma=1.5)
+#  hsv_h: 0.015  # image HSV-Hue augmentation (fraction)
+#  hsv_s: 0.7  # image HSV-Saturation augmentation (fraction)
+#  hsv_v: 0.4  # image HSV-Value augmentation (fraction)
+#  degrees: 0.0  # image rotation (+/- deg)
+#  translate: 0.1  # image translation (+/- fraction)
+#  scale: 0.9  # image scale (+/- gain)
+#  shear: 0.0  # image shear (+/- deg)
+#  perspective: 0.0  # image perspective (+/- fraction), range 0-0.001
+#  flipud: 0.0  # image flip up-down (probability)
+#  fliplr: 0.5  # image flip left-right (probability)
+#  mosaic: 1.0  # image mosaic (probability)
+#  mixup: 0.15  # image mixup (probability)
+#  copy_paste: 0.3  # segment copy-paste (probability)
+#
+#optimizer_dict:
+#  optimizer: 'SGD'
+#  lr0: 0.003
+##  momentum: 0.9
+##  weight_decay: 0.0001
+#
+#resume: True
+#fine_tune_pretrain: True

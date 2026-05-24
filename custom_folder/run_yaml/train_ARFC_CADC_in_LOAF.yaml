@@ -1,0 +1,23 @@
+output_path: Overhead_fisheye/LOAF_YOLO_xyxy_from_rbox  #/ric_nas/Overhead_fisheye/LOAF_YOLO  LOAF_YOLO_xyxy_from_rbox  LOAF_tiny4test
+epochs: 100
+batch: 16
+mode: train
+model_yaml: runs/obb/habbof_obb542/weights/last.pt #yolov8m-custom-obb.yaml  #runs/obb/habbof_obb296/weights/last.pt  yolov8l-custom-obb.yaml
+device: '2'
+imgsz: 1024
+augment_dict:
+  degrees: 180
+  translate: 0
+  mosaic: 0
+
+CADC: True
+cut_scale_up: True
+#custom_augment: False
+resume: True
+#CUSTOM_OPTIMIZER_SCHEDULER: True
+#experiment_name: 'RotatedTaskAlignedAssigner use probiou'
+#optimizer: 'SGD'
+#lr: 0.0005
+#box: 7.5 # (float) box loss gain
+#cls: 3.0 # (float) cls loss gain
+#dfl: 1.5 # (float) dfl loss gain

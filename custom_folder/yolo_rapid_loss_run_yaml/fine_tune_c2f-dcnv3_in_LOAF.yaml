@@ -1,0 +1,10 @@
+dataset: 'LOAF'
+batch_size: 4
+model_cfg: 'ultralytics/cfg/models/v8/yolov8l-rapid-c2f-dcnv3.yaml'
+device: '3'
+loaf_data: True
+checkpoint: 'weights/yolov8l/rapid_pL1_dark53_COCO608_Mar14_104000.ckpt'
+eval_interval: 2000
+high_resolution: True
+#img_interval: 2
+print_interval: 10
